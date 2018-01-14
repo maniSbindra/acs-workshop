@@ -5,6 +5,11 @@
 az login
 ```
 
+## List associated subscriptions
+```sh
+az account list
+```
+
 ## set account if more than 1 subscription associated with login 
 ```sh
 az account set --subscription <subscription id>
