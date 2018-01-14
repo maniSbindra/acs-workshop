@@ -27,7 +27,12 @@ az group create -n acs-workshop-rg -l southeastasia
 az acs create -n acs-workshop-linux -g acs-workshop-rg  --orchestrator-type=kubernetes --generate-ssh-keys
 ```
 
-## Get ACS K8s Credentials
+## If you do not have kubectl installed execute the following command
+```sh
+az acs kubernetes install-cli
+```
+
+## Get ACS K8s Credentials for the provisioned cluster
 ```sh
 az acs kubernetes get-credentials -n acs-workshop-linux -g acs-workshop-rg
 ```
