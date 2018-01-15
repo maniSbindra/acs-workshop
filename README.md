@@ -7,4 +7,4 @@
 
 * To create K8s cluster with Windows Agents follow instructions in [Windows Agents](./win-agents.md)
 
-## Once required cluster is created complete the [exercise](./k8s-exercise.md) which will take you through the most common k8s resources
+## Once required cluster is created complete the [exercise](./k8s-exercise.md) which will take you through the most common k8s resources and commands
