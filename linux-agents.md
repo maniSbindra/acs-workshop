@@ -36,3 +36,5 @@ az acs kubernetes install-cli
 ```sh
 az acs kubernetes get-credentials -n acs-workshop-linux -g acs-workshop-rg
 ```
+
+## Follow the instructions mentioned in  [exercise](./k8s-exercise.md)
