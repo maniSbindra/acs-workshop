@@ -25,9 +25,11 @@ kubectl get deployments
 kubectl get pods
 # pod name will be of the form webapp-XXXXXXX-XX
 
+# view the nodes on which the pods are scheduled
+kubectl get pods -o wide
 ```
 
-## Expose the Deployment so using service of type Loadbalancer
+## Expose the Deployment so using service of type Loadbalancer. Once public IP is available for the service, access it using the browser. You should see a website which displays the hostname/machine name for the web container.
 ```sh
 # expose deployment as service
 kubectl expose deployment webapp --port=80 --type=LoadBalancer
@@ -35,8 +37,22 @@ kubectl expose deployment webapp --port=80 --type=LoadBalancer
 # Get Details of Service
 kubectl get services
 
-# watch service till we get a public ip. After status changes from pending and you a public ip for the service, hit that public ip from the browser
+# watch service till we get a public ip. After status changes from pending and you a public ip for the service, hit that public ip from the browser. You can terminate the watch on this command using ctrl + c
 kubectl get services -w
 ```
 
+
+## Scale the deployment to 3 pods. Doing refresh (ctrl + F5) of the browser after this should show you 3 different machine names
+```sh
+## scale the deployment
+kubectl scale --replicas=3 deployment/webapp
+
+## have a look at the deployment
+kubectl get deployment webapp
+
+## view the pods and which nodes they are scheduled to
+kubectl get pods -o wide
+
+## Refresh browser (ctrl + f5)
+```
 
