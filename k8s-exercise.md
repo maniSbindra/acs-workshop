@@ -16,7 +16,7 @@ kubectl get nodes
 ## Create deployment and Pods for web application 
 ```sh
 # Create deployment and pods
-kubectl run webapp --<container-image> --port=80
+kubectl run webapp --image=<container-image> --port=80
 
 # view the deployment
 kubectl get deployments
