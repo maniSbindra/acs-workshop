@@ -17,6 +17,11 @@ az account set --subscription <subscription id>
 # az account show
 ```
 
+
+## Create Service Principal and get clientid and clientsecret
+```sh
+```
+
 ## Create resource group
 ```sh
 az group create -n acs-workshop-win-rg -l southeastasia
@@ -24,7 +29,7 @@ az group create -n acs-workshop-win-rg -l southeastasia
 
 ## Create ACS k8s cluster with windows agents
 ```sh
-az acs create -n acs-workshop-windows -g acs-workshop-win-rg  --orchestrator-type=kubernetes --generate-ssh-keys
+az acs create -n acs-workshop-windows -g acs-workshop-win-rg  --orchestrator-type=kubernetes --generate-ssh-keys --windows --admin-username azureuser --admin-password myDiffiCultp@ssword
 ```
 
 ## If you do not have kubectl installed execute the following command
