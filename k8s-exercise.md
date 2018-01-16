@@ -42,7 +42,7 @@ kubectl expose deployment webapp --port=80 --type=LoadBalancer
 kubectl get services
 
 # watch service till we get a public ip. After status changes from pending and you a public ip for the service, hit that public ip from the browser. You can terminate the watch on this command using ctrl + c
-kubectl get services -w
+# kubectl get services -w
 ```
 
 
