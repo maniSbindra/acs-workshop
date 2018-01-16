@@ -9,6 +9,9 @@
 # Get cluster information
 kubectl cluster-info
 
+# Check status of different kubernetes components
+kl get componentstatuses
+
 # Get Details of Nodes in the cluster
 kubectl get nodes
 ```
