@@ -22,9 +22,15 @@ az account set --subscription <subscription id>
 az group create -n acs-workshop-rg -l southeastasia
 ```
 
-## Register Azure container service provider with subscription
+## Register required providers with subscription
 ```sh
-az provider register -n Microsoft.ContainerService
+az provider show -n Microsoft.Network -o table
+# if Microsoft.Network not registered then register it
+az provider register -n Microsoft.Network
+
+az provider show -n Microsoft.Compute -o table
+# if Microsoft.Compute not registered then register it 
+az provider register -n Microsoft.Compute
 ```
 
 ## Create ACS k8s cluster with linux agents
