@@ -24,12 +24,13 @@ kubectl run webapp --image={container-image} --port=80
 # view the deployment
 kubectl get deployments
 
-# view the pod/s
+# view the pod/s.
 kubectl get pods
 # pod name will be of the form webapp-XXXXXXX-XX
 
 # view the nodes on which the pods are scheduled
 kubectl get pods -o wide
+# before moving to the next step wait for the pods state to change to running. This will take longer for the windows container as the image size is large, which causes the initial image pull to take longer
 ```
 
 ## Expose the Deployment so using service of type Loadbalancer. Once public IP is available for the service, access it using the browser. You should see a website which displays the hostname/machine name for the web container.
