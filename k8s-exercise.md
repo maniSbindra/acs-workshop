@@ -16,7 +16,7 @@ kl get componentstatuses
 kubectl get nodes
 ```
 
-## Create deployment and Pods for web application 
+## Create deployment and Pods for web application, remember to replace {container-image} with the actual image as shown above
 ```sh
 # Create deployment and pods
 kubectl run webapp --image={container-image} --port=80
