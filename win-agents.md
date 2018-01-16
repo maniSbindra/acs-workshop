@@ -43,10 +43,10 @@ az provider register -n Microsoft.Compute
 az acs create -n acs-workshop-windows -g acs-workshop-win-rg  --orchestrator-type=kubernetes --generate-ssh-keys --windows --admin-username azureuser --admin-password myDiffiCultp@ssword
 ```
 
-## If you do not have kubectl installed execute the following command - kubectl is already available with Azure Cloud Shell as a result this step is not needed for Azure Cloud Shell, only needed if you have installed Azure CLI on your dev machine and you do not have kubectl installed
+<!-- ## If you do not have kubectl installed execute the following command - kubectl is already available with Azure Cloud Shell as a result this step is not needed for Azure Cloud Shell, only needed if you have installed Azure CLI on your dev machine and you do not have kubectl installed
 ```sh
 az acs kubernetes install-cli
-```
+``` -->
 
 ## Get ACS K8s Credentials for the provisioned cluster
 ```sh
