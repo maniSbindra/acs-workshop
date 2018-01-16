@@ -1,8 +1,8 @@
 # Exercise to go through some basic k8s resources, commands and concepts
 
 ## Use the following container images depending on whether you are using linux or windows agents
-* For K8s cluster with linux agents use {container-image} = tutum/hello-world. (In the following steps of this exercise replace {container-image} with tutum/hello-world )
-* For K8s cluster with windows agents use {container-image} = maninderjit/asp.net:0.2. (In the following steps of this exercise replace {container-image} with maninderjit/asp.net:0.2)
+* For K8s cluster with linux agents use {container-image} = tutum/hello-world. (In the following steps of this exercise **replace {container-image} with tutum/hello-world** )
+* For K8s cluster with windows agents use {container-image} = maninderjit/asp.net:0.2. (In the following steps of this exercise **replace {container-image} with maninderjit/asp.net:0.2**)
 
 ## Get basic information about the kubernetes cluster, and information about the nodes
 ```sh
