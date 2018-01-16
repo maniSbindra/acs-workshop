@@ -55,7 +55,7 @@ kubectl scale --replicas=3 deployment/webapp
 kubectl get deployment webapp
 
 ## view the pods and which nodes they are scheduled to
-kubectl get pods -o wide
+kubectl get pods -o wide -w
 
 ## Refresh browser (ctrl + f5)
 ```
