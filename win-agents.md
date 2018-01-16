@@ -18,9 +18,9 @@ az account set --subscription <subscription id>
 ```
 
 
-## Create Service Principal and get clientid and clientsecret
+<!-- ## Create Service Principal and get clientid and clientsecret
 ```sh
-```
+``` -->
 
 ## Create resource group
 ```sh
@@ -32,7 +32,7 @@ az group create -n acs-workshop-win-rg -l southeastasia
 az acs create -n acs-workshop-windows -g acs-workshop-win-rg  --orchestrator-type=kubernetes --generate-ssh-keys --windows --admin-username azureuser --admin-password myDiffiCultp@ssword
 ```
 
-## If you do not have kubectl installed execute the following command
+## If you do not have kubectl installed execute the following command - kubectl is already available with Azure Cloud Shell as a result this step is not needed for Azure Cloud Shell, only needed if you have installed Azure CLI on your dev machine and you do not have kubectl installed
 ```sh
 az acs kubernetes install-cli
 ```

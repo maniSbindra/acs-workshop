@@ -1,16 +1,16 @@
 # Instructions to create ACS k8s cluster with linux agents
 
-## login
+## login - this step is not needed for Azure Cloud Shell, only needed if you have installed Azure CLI on your dev machine
 ```sh
 az login
 ```
 
-## List associated subscriptions
+## List associated subscriptions - this step is not needed for Azure Cloud Shell, only needed if you have installed Azure CLI on your dev machine
 ```sh
 az account list
 ```
 
-## set account if more than 1 subscription associated with login 
+## set account if more than 1 subscription associated with login - this step is not needed for Azure Cloud Shell, only needed if you have installed Azure CLI on your dev machine
 ```sh
 az account set --subscription <subscription id>
 # verify correct account is set 
@@ -27,7 +27,7 @@ az group create -n acs-workshop-rg -l southeastasia
 az acs create -n acs-workshop-linux -g acs-workshop-rg  --orchestrator-type=kubernetes --generate-ssh-keys
 ```
 
-## If you do not have kubectl installed execute the following command
+## If you do not have kubectl installed execute the following command - kubectl is already available with Azure Cloud Shell as a result this step is not needed for Azure Cloud Shell, only needed if you have installed Azure CLI on your dev machine and you do not have kubectl installed
 ```sh
 az acs kubernetes install-cli
 ```
