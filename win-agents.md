@@ -1,16 +1,16 @@
 # Instructions to create ACS k8s cluster with windows agents
 
-## login
+## login - this step is not needed for Azure Cloud Shell, only needed if you have installed Azure CLI on your dev machine 
 ```sh
 az login
 ```
 
-## List associated subscriptions
+## List associated subscriptions - this step is not needed for Azure Cloud Shell, only needed if you have installed Azure CLI on your dev machine
 ```sh
 az account list
 ```
 
-## set account if more than 1 subscription associated with login 
+## set account if more than 1 subscription associated with login - this step is not needed for Azure Cloud Shell, only needed if you have installed Azure CLI on your dev machine 
 ```sh
 az account set --subscription <subscription id>
 # verify correct account is set 
