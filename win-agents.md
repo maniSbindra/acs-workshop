@@ -27,7 +27,7 @@ az account set --subscription <subscription id>
 az group create -n acs-workshop-win-rg -l southeastasia
 ```
 
-## Create ACS k8s cluster with windows agents
+## Create ACS k8s cluster with windows agents. Please do change the windows agent machine password (--admin-password value).
 ```sh
 az acs create -n acs-workshop-windows -g acs-workshop-win-rg  --orchestrator-type=kubernetes --generate-ssh-keys --windows --admin-username azureuser --admin-password myDiffiCultp@ssword
 ```
