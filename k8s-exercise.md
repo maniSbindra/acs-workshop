@@ -60,3 +60,15 @@ kubectl get pods -o wide
 ## Refresh browser (ctrl + f5)
 ```
 
+## Finally we have a look at the kubernetes dashboard. After exectuting the command below browse to http://localhost:8001/api/v1/namespaces/kube-system/services/kubernetes-dashboard/proxy/ to see the kubernetes dashboard
+```sh
+# port forward to the kubernetes dasboard  pod
+kubectl proxy
+# above command will open port to kuberntes dashboard from local host port 8001
+
+# Next go to the browser and type http://localhost:8001/ui
+# This should show http://localhost:8001/api/v1/namespaces/kube-system/services/kubernetes-dashboard/proxy in the browser just append a / at the end
+
+# Browse to http://localhost:8001/api/v1/namespaces/kube-system/services/kubernetes-dashboard/proxy/ to see the kuberntes dashboard
+
+```
