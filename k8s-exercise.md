@@ -72,3 +72,13 @@ kubectl proxy
 # Browse to http://localhost:8001/api/v1/namespaces/kube-system/services/kubernetes-dashboard/proxy/ to see the kuberntes dashboard
 
 ```
+
+
+## Clean up the resourses created.
+```sh
+# For windows agent based cluster
+az group delete -n acs-workshop-win-rg
+
+# For linux based agents
+az group delete -n acs-workshop-rg
+```
